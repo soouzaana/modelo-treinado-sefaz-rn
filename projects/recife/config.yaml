@@ -1,0 +1,25 @@
+Model:
+    CharSet: [' ', '0', '1', '2', '3', '4', '5', '6', '7', '8', A, B, C, D, E, F,
+        G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y]
+    ImageChannel: 1
+    ImageHeight: 64
+    ImageWidth: -1
+    Word: false
+System:
+    Allow_Ext: [jpg, jpeg, png, bmp]
+    GPU: true
+    GPU_ID: 0
+    Path: /home/gotec/modelo/dataset_recife/rotulado
+    Project: recife
+    Val: 0.1
+Train:
+    BATCH_SIZE: 64
+    CNN: {NAME: ddddocr}
+    DROPOUT: 0.3
+    LR: 0.0007
+    OPTIMIZER: Adam
+    SAVE_CHECKPOINTS_STEP: 500
+    TARGET: {Accuracy: 0.97, Cost: 0.05, Epoch: 50}
+    TEST_BATCH_SIZE: 64
+    TEST_STEP: 100
+    WEIGHT_DECAY: 0.0001
